@@ -1,3 +1,4 @@
+// +build !integration
 // Copyright 2014-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License"). You may
@@ -185,7 +186,7 @@ func TestFindAvailableVersiosn(t *testing.T) {
 		case Version_1_21:
 			return mockClient121, nil
 		case Version_1_22:
-			return mockClient122, nil	
+			return mockClient122, nil
 		default:
 			t.Fatal("Unrecognized version")
 		}
